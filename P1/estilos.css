@@ -1,0 +1,284 @@
+*{
+    font-family: 'Lobster', cursive;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header{grid-area: header;}
+.nav{grid-area: nav;}
+.aside{grid-area: aside;}
+.main{grid-area: main;}
+.footer{grid-area: footer;}
+
+.header{
+  display: flex;
+  justify-content: center;
+}
+
+.main{
+  margin-top:10px;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  body {color: rgb(102, 255, 71);
+    font-size:3vw;
+  }
+  img{
+    max-width: 100%;
+  }
+  iframe{
+    max-width: 100%;
+  }
+  .esconder{
+    display: none;
+  }
+  }
+  
+  .footer{
+    margin-top:10px;
+  display: flex;
+  justify-content: center;
+  }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'nav header header header header aside'
+    'nav main main main main aside'
+    'nav footer footer footer footer aside';
+  padding: 5px;
+}
+
+.grid-container2 {
+  display:grid;
+  grid-template-areas:
+    'header aside'
+    'main aside'
+    'nav aside';
+  padding: 30px;
+}
+
+.grid-container3 {
+  display:grid;
+  grid-template-areas:
+    'nav header aside'
+    'main main aside';
+  padding: 30px;
+}
+
+.nav{
+  margin-top:10px;
+  display: flex;
+  justify-content: center;
+}
+
+.aside{
+  display: flex;
+  margin-left:100px;
+}
+
+
+nav#foto ul li{
+  display:inline-block;
+  margin-left:0px;
+  margin-top:10px;
+  text-align: center;
+}
+
+nav#foto li:hover {
+  transform: scale(1, 1);
+}
+
+main#foto ul li{
+  display:inline-block;
+  margin-left:100px;
+  margin-top:10px;
+  text-align: center;
+}
+
+main#foto li:hover {
+  transform: scale(1, 1);
+}
+
+
+body  {
+    background-image: url("images/fundo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .animacao2 {
+    width: 200px;
+    height: 200px;
+    animation: deslocar2 2s infinite alternate;
+  }
+  
+  @keyframes deslocar2 {
+    from {
+      transform: translateY(100px);
+    }
+    to {
+      transform: translateY(250px);
+    }
+  }
+
+  .animacao3{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    animation: bola 2s infinite alternate;
+  }
+
+  @keyframes bola {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(250px);
+  }
+  }
+
+
+  .animacao {
+    width: 200px;
+    height: 200px;
+    animation: deslocar 2s infinite alternate;
+  }
+  
+  @keyframes deslocar {
+    from {
+      transform: translateX(700px);
+    }
+    to {
+      transform: translateX(400px);
+    }
+  }
+
+  p#animacao {
+    animation-duration: 3s;
+  animation-name: deslizar;
+  }
+
+  @keyframes deslizar {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  p#animacao2 {
+  animation-duration: 7s;
+  animation-name: vip;
+  animation-iteration-count: infinite;
+  }
+
+  @keyframes vip {
+    from {
+      margin-left: -50%;
+      width: -100%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+      font-size: 150%;
+    }
+  }
+
+    h3{
+      text-align: center;
+        font-family: 'New Tegomin', serif;
+        color:rgb(102, 255, 71);
+    }
+    h1{
+      text-align: center;
+        font-family: 'Train One', cursive;
+        color:rgb(102, 255, 71);
+    }
+    h5{
+      text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+        color:rgb(102, 255, 71);
+    }
+    .title{
+        font-size: 22px;
+    }
+    .text{
+        font-size: 11px;
+}
+
+
+.hdr{
+    background:rgb(102, 255, 71) ;
+}
+
+.table{
+    background: blue;
+}
+.area{
+    background: white;
+}
+.ask{
+    background: darkcyan;
+}
+.importante{
+    font-weight: bold ;
+    }
+ p::first-letter {
+        color: blue;
+        font-size: x-large;
+      }
+p#unico{
+    background: rgb(0, 140, 255);
+}
+
+a:hover{
+    background-color:rgb(235, 14, 14)  ;
+}
+a:active{
+   color:rgb(238, 255, 0)  ;
+}
+
+a:visited{
+  background-color:rgb(125, 252, 241)  ;
+}
+
+a:link{
+    color:rgb(0, 255, 13)  ;
+}
+
+.menu{
+  display: flex;
+  flex-direction: column;
+  position: static;
+}
+
+.menu li{
+  position:relative;
+  float:inline-start;
+  }
+
+  .menu li  ul{
+    position:absolute;
+    top:0;
+    left:100px;
+    background-color:none;
+    display:none;
+    }
+  
+    .menu li:hover ul, .menu li.over ul{display:block;}
+
+ul.none {
+	list-style-type: none;
+	}
+
+

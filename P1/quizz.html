@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Antonio Catarino">
+    <meta name="keywords" content="Portimao">
+    <meta name="description" content="Website sobre Portimao">
+    <title>Futebol VIP</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/site.ico"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=New+Tegomin&family=Train+One&display=swap" rel="stylesheet">
+</head>
+
+<div class="grid-container3">
+  <body>
+
+    <header class="header">
+        <h1>Futebol VIP: Quizz</h1>
+        <link rel="stylesheet" href="estilos.css"/>
+    </header>
+    
+    <nav class="menu">
+        <ul class="none">
+              <li ><a href="index.html"><img src="images/home.ico" width="35" height="35" >Homepage</a></li>
+
+              <li><a href="#"><img src="images/football.ico" width="35" height="35">Jogadores</a>
+              <ul class="none">
+                <li><a href="figo.html"><img src="images/bola2.ico" width="35" height="35" >Figo</a></li>
+                <li><a href="ronaldo.html"><img src="images/bola3.ico" width="35" height="35" >C.Ronaldo</a></li>
+                <li><a href="zidane.html"><img src="images/bola4.ico" width="35" height="35" >Zidane</a></li>
+                <li><a href="ronaldinho.html"><img src="images/bola1.ico" width="35" height="35" >Ronaldinho</a></li>
+             </ul>
+                   
+             <li><a href="#"><img src="images/club.png" width="35" height="35">Equipas</a>
+                <ul class="none">
+                  <li><a href="united.html"><img src="images/united.png" width="35" height="35" >M.United</a></li>
+                  <li><a href="sporting.html"><img src="images/scp.png" width="35" height="35" >Sporting</a></li>
+                  <li><a href="madrid.html"><img src="images/madrid.png" width="35" height="35" >R.Madrid</a></li>
+                  <li><a href="juventus.html"><img src="images/juventus.jpg" width="35" height="35" >Juventus</a></li>
+               </ul>
+
+               <li><a href="#"><img src="images/estadioo.ico" width="35" height="35">Estádios</a>
+                <ul class="none">
+                  <li><a href="bernabeu.html"><img src="images/estadio.ico" width="35" height="35" >Bernabéu</a></li>
+                  <li><a href="alvalade.html"><img src="images/estadio.ico" width="35" height="35" >Alvalade</a></li>
+                  <li><a href="trafford.html"><img src="images/estadio.ico" width="35" height="35" >Old Trafford</a></li>
+               </ul>
+
+               <li><a href="quizz.html"><img src="images/quizz.ico" width="35" height="35" ><b>Quizz</b></a></li>
+
+               <li><a href="info.html"><img src="images/info.ico" width="35" height="35" >Sobre</a></li>
+      </ul>
+      </nav>
+
+        <main class="main">
+            <article>
+    <h3>Quizz</h3>
+    <form method="POST" action="a21503845@alunos.ulusofona.pt" autocomplete="on">
+
+      <section>
+       <fieldset class="ask">
+           <legend><b>Dados pessoais:</b></legend> 
+<p>Nome:<input type="text" name="nome" placeholder="Insira nome" size="20" maxlength="20" autofocus></p>
+<p>Apelido:<input type="text" name="apelido" placeholder ="Insira apelido" size="20" maxlength="20" ></p>
+<p>E-mail:<input type="text" name="e-mail" placeholder ="Insira e-mail" size="50" maxlength="50" ></p>
+</fieldset>
+</section>
+
+<section>
+<fieldset class="ask" >
+    <legend><img src="images/quizz.png" width="60" height="60"><b>Quizz:</b></legend>
+
+    <p>Qual o clube com mais Champions League❓</p>
+    <input type="radio" name="clubeChampions" value="juventus">
+    <label for="juventus">Juventus🏳️</label><br>
+    <input type="radio" name="clubeChampions" value="madrid">
+    <label for="madrid">Real Madrid🏳️</label><br>   
+
+    <p>Qual a actual função de Zinédine Zidane❓<input list="funcao" name="funcao"></p>
+<datalist id="funcao">
+<option value="Jogador">
+<option value="Treinador">
+</datalist>
+
+<p>🗺Qual o actual clube de Lionel Messi❓<input type="text" name="clubMessi" placeholder ="Insira o clube" size="50" maxlength="50" ></p>
+
+<p>👨‍👩‍👦‍👦Qual a capacidade do Estádio José Alvalade XXI(arredondado)❓<input type="range" min="40000" max="70000" name="habitantes" value="0" oninput="habitantesP.value = parseInt(habitantes.value)" step="500" ></p>
+<output name="habitantesP" for="habitantes">40000</output> habitantes
+
+<p>⚽ Qual destes clubes é o mais antigo❓<input list="clubesA" name="antigo"></p>
+<datalist id="clubesA">
+<option value="Real Madrid">
+<option value="Manchester United">
+<option value="Sporting">
+  <option value="Juventus">
+</datalist>
+
+<p>ℹ️Quais destes jogadores ganharam a bola de ouro❓</p><select name="bolaOuro" size=4 multiple>
+    <option value="ronaldo">Cristiano Ronaldo</option>
+    <option value="robben">Arjen Robben</option>
+    <option value="messi">Lionel Messi</option>
+    <option value="ribery">Frank Ribéry</option>
+    </select><br>
+
+    <label for="nrChampions">🔢Quantos troféus Champions League tem o Real Madrid(entre 0 e 20)❓</label>
+    <input type="number" id="nrChampions" name="nrChampions" min="0" max="20" step="1"><br><br>   
+
+    <p>🌍Qual o país natal de Cristiano Ronaldo❓</p>
+<input type="radio" name="pais" value="espanha">
+<label for="espanha">Espanha<img src="images/esp.png" width="30" height="20"></label><br>
+<input type="radio" name="pais" value="franca">
+<label for="franca">França<img src="images/fr.png" width="35" height="20"></label><br>
+<input type="radio" name="pais" value="portugal">
+<label for="portugal">Portugal<img src="images/pt.png" width="20" height="20"></label><br>
+<input type="radio" name="pais" value="inglaterra">
+<label for="inglaterra">Inglaterra<img src="images/ing.png" width="20" height="20"></label><br>
+
+<p>📅Qual a data de fundação do Real Madrid❓ <input type="date" name="dataMadrid"></p>
+
+<p>❓Algum destes clubes é o seu preferido❓</p><select name="clubePreferido">
+<option value="sim">Sim😀</option>
+<option value="nao">Não😢</option>
+</select>
+
+<p>🤔Qual a sua opinião sobre o futebol❓</p>
+<textarea class="area" name="opiniao" rows="10" cols="30">
+Inserir opinião.
+</textarea>
+<br>
+
+<input type="submit" value="Submeter">
+
+</fieldset>
+</section>
+        </form>
+            </article>
+        </main>
+
+        <aside class="aside">
+          <section>
+                  <section>  
+                    <figure>
+                        <img src="images/bola2.ico" class="animacao3">
+                    </figure>
+                </section>
+              </aside>
+                          
+</body>
+</div>
+</html>
