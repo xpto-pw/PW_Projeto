@@ -14,9 +14,9 @@ max-width: 100%;
 }
 
 svg{
-max-width: 100%;
-width: auto;
-height: auto;
+width: 100%;
+height:100%;
+display: block;
 }
 
 IMG.displayed {
@@ -42,6 +42,11 @@ background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: cover;
 }
+
+/* body, html {
+  height: 100%;
+}
+svg not showing using percenteged*/
 
 .footer{
 margin-top:10px;
